@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database/model1.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database/model1.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("external%20file\'s/databasematerial\'s/databasescript.sql")]
 
 

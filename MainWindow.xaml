@@ -37,6 +37,5 @@
             Name="NavFrame"
             NavigationUIVisibility="Hidden"
             Grid.Row="1"/>
-
     </Grid>
 </Window>

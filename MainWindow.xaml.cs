@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ArchiveTask.Action_s; // Прописываем using для корректной работы классов
 
 namespace ArchiveTask
 {

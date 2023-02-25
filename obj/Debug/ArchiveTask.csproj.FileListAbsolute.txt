@@ -16,3 +16,13 @@ C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\ArchiveTask.csproj.CoreCompileI
 C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\ArchiveTask.exe
 C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\ArchiveTask.pdb
 C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\App.baml
+C:\Users\Alex\source\repos\ArchiveTask\bin\Debug\EntityFramework.dll
+C:\Users\Alex\source\repos\ArchiveTask\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alex\source\repos\ArchiveTask\bin\Debug\EntityFramework.xml
+C:\Users\Alex\source\repos\ArchiveTask\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alex\source\repos\ArchiveTask\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\Page's\AdminPage.g.cs
+C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\Page's\LoginPage.g.cs
+C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\Page's\AdminPage.baml
+C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\Page's\LoginPage.baml
+C:\Users\Alex\source\repos\ArchiveTask\obj\Debug\ArchiveTask.csproj.CopyComplete
