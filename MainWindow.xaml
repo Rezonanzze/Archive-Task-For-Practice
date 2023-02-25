@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArchiveTask"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Archive Management System v1.0" Height="650" Width="1000"
+        Background="#313b5a" ResizeMode="CanMinimize">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <!--Grid 0-->
+            <RowDefinition Height="40*"/>
+            <!--Grid 1-->
+            <RowDefinition Height="250*"/>
+            <!--Grid 2-->
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+
+        <!--Шапка-->
+        <StackPanel Background="#ff3445">
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Image Source="./Element's/Media/Archive.png"
+                       Width="60"
+                       Height="78"/>
+                <TextBlock
+                    Text="Система управления архивом OneNote"
+                    Style="{StaticResource TextBlockHeader}"
+                    VerticalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!--Frame навигации-->
+        <Frame
+            Name="NavFrame"
+            NavigationUIVisibility="Hidden"
+            Grid.Row="1"/>
+
     </Grid>
 </Window>

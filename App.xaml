@@ -4,6 +4,18 @@
              xmlns:local="clr-namespace:ArchiveTask"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Margin" Value="2.5"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlockHeader">
+            <Setter Property="FontSize" Value="20pt"/>
+            <Setter Property="Margin" Value="2.5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
     </Application.Resources>
 </Application>
