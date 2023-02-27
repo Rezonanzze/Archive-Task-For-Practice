@@ -25,5 +25,10 @@ namespace ArchiveTask.Page_s
         {
             InitializeComponent();
         }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationClass.Navigation.GoBack();
+        }
     }
 }

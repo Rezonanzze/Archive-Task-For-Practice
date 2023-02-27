@@ -13,18 +13,21 @@
                     VerticalAlignment="Center"
                     Width="600">
             <Image Source="../Element's/Media/PasswordLock.png"
-                   Width="220"/>
+                   Width="220"
+                   Margin="2.5"/>
             <GroupBox
                 Header="Введите пароль администратора"/>
             <PasswordBox
                 Name="AdminPasswordBox"/>
-            <Button
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button
                 Width="90"
                 Height="30"
-                HorizontalAlignment="Right"
                 Content="Войти"
                 Name="ButtonAdminLogin"
                 Click="ButtonAdminLogin_Click"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

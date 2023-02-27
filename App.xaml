@@ -32,5 +32,12 @@
             <Setter Property="Margin" Value="2.5"/>
         </Style>
 
+        <Style TargetType="PasswordBox">
+            <Setter Property="Foreground" Value="#ff3445"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="12pt"/>
+            <Setter Property="Margin" Value="2.5"/>
+        </Style>
+
     </Application.Resources>
 </Application>

@@ -9,6 +9,20 @@
       Title="AdminPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="400*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button
+                Width="90"
+                Height="30"
+                Content="Выйти"
+                Name="ButtonBack"
+                Click="ButtonBack_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

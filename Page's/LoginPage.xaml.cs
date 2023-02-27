@@ -30,7 +30,23 @@ namespace ArchiveTask.Page_s
 
         private void ButtonAdminLogin_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                if (AdminPasswordBox.Password == "12345") //Условие для passwordbox'a
+                {
+                    NavigationClass.Navigation.Navigate(new AdminPage()); //Класс>Название>Функция "Navigate">(new "Страница"());
+                }
+                else
+                {
+                    MessageBox.Show("Вы ввели неверный пароль администратора, попробуйте ещё раз","Неверный пароль",MessageBoxButton.OK,MessageBoxImage.Error);
+                    //MessageBox.Show(Комментарий>Название сообщения>Кнопка>Картинка)
+                }
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
