@@ -17,5 +17,20 @@
             <Setter Property="FontWeight" Value="Bold"/>
         </Style>
 
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Margin" Value="2.5"/>
+            <Setter Property="Background" Value="#ff3445"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="12pt"/>
+        </Style>
+
+        <Style TargetType="GroupBox">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="12pt"/>
+            <Setter Property="Margin" Value="2.5"/>
+        </Style>
+
     </Application.Resources>
 </Application>

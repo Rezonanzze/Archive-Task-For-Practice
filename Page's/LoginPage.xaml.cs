@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ArchiveTask.Action_s; // Прописываем using для корректной работы навигации
 
 namespace ArchiveTask.Page_s
 {
@@ -23,6 +24,13 @@ namespace ArchiveTask.Page_s
         public LoginPage()
         {
             InitializeComponent();
+
+            
+        }
+
+        private void ButtonAdminLogin_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

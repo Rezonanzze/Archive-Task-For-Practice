@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ArchiveTask.Action_s; // Прописываем using для корректной работы классов
+using ArchiveTask.Page_s;
 
 namespace ArchiveTask
 {
@@ -24,6 +25,9 @@ namespace ArchiveTask
         public MainWindow()
         {
             InitializeComponent();
+
+            NavigationClass.Navigation = NavFrame; //Класс>Название>Фрейм
+            NavFrame.Navigate(new LoginPage());
         }
     }
 }
