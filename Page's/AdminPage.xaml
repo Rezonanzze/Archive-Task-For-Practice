@@ -14,12 +14,44 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
+        <!--Навигация по вкладкам-->
+        <TabControl>
+            <!--Вкладка "Архив"-->
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            Text="Архив"/>
+                    </StackPanel>
+                </TabItem.Header>
+            </TabItem>
+
+            <!--Вкладка "Документы"-->
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            Text="Документы"/>
+                    </StackPanel>
+                </TabItem.Header>
+            </TabItem>
+
+            <!--Вкладка "Выдача"-->
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            Text="Выдача"/>
+                    </StackPanel>
+                </TabItem.Header>
+            </TabItem>
+
+        </TabControl>
+
         <StackPanel Grid.Row="1"
                     Orientation="Horizontal"
                     HorizontalAlignment="Right">
             <Button
-                Width="90"
-                Height="30"
                 Content="Выйти"
                 Name="ButtonBack"
                 Click="ButtonBack_Click"/>

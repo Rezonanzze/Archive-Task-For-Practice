@@ -22,8 +22,6 @@
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Right">
                 <Button
-                Width="90"
-                Height="30"
                 Content="Войти"
                 Name="ButtonAdminLogin"
                 Click="ButtonAdminLogin_Click"/>
