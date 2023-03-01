@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
 
         <!--Навигация по вкладкам-->
-        <TabControl>
+        <TabControl Background="#313b5a">
             <!--Вкладка "Архив"-->
             <TabItem>
                 <TabItem.Header>
@@ -24,6 +24,21 @@
                             Text="Архив"/>
                     </StackPanel>
                 </TabItem.Header>
+                <!--Заполнение вкладки "Архив"-->
+                <TabItem.Content>
+                    <Grid Name="Archive">
+                        <DataGrid>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Width="35" Binding="{Binding Id}"/>
+                                <DataGridTextColumn Header="Номер ячейки" Width="*" Binding="{Binding CellCodeName}"/>
+                                <DataGridTextColumn Header="Ячейка" Width="*" Binding="{Binding Cell}"/>
+                                <DataGridTextColumn Header="Стеллаж" Width="*" Binding="{Binding Rack}"/>
+                                <DataGridTextColumn Header="Полка" Width="*" Binding="{Binding Shelf}"/>
+                                <DataGridTextColumn Header="Заполненность" Width="*" Binding="{Binding FillId.FillType}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem.Content>
             </TabItem>
 
             <!--Вкладка "Документы"-->
@@ -34,6 +49,22 @@
                             Text="Документы"/>
                     </StackPanel>
                 </TabItem.Header>
+                <!--Заполнение вкладки "Документы"-->
+                <TabItem.Content>
+                    <Grid Name="Documents">
+                        <DataGrid>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Width="35" Binding="{Binding Id}"/>
+                                <DataGridTextColumn Header="Номер ячейки" Width="*" Binding="{Binding CellCodeId.CellCodeName}"/>
+                                <DataGridTextColumn Header="Инвентарный №" Width="*" Binding="{Binding InventoryNumberId.InventoryNumberName}"/>
+                                <DataGridTextColumn Header="Дата поступления" Width="*" Binding="{Binding InventoryNumberId.InventoryNumberName}"/>
+                                <DataGridTextColumn Header="Наименование" Width="*" Binding="{Binding DocumentName}"/>
+                                <DataGridTextColumn Header="Тема" Width="*" Binding="{Binding InventoryNumberId.Theme}"/>
+                                <DataGridTextColumn Header="Кол-во" Width="75" Binding="{Binding InventoryNumberId.Count}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem.Content>
             </TabItem>
 
             <!--Вкладка "Выдача"-->
@@ -44,6 +75,7 @@
                             Text="Выдача"/>
                     </StackPanel>
                 </TabItem.Header>
+                <!--Заполнение вкладки "Выдача"-->
             </TabItem>
 
         </TabControl>

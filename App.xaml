@@ -60,5 +60,12 @@
             </Style.Triggers>
         </Style>
 
+        <Style TargetType="DataGrid">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="9pt"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="#313b5a"/>
+        </Style>
+
     </Application.Resources>
 </Application>
