@@ -186,6 +186,7 @@
     <Resource Include="External File%27s\App\AppAdminPage1.png" />
     <Resource Include="External File%27s\App\AppAdminPage2.png" />
     <Resource Include="External File%27s\App\AppLoginPage.png" />
+    <Resource Include="Element%27s\Media\CustomerDocument.png" />
     <Content Include="External File%27s\DatabaseMaterial%27s\DatabaseScript.sql" />
   </ItemGroup>
   <ItemGroup>

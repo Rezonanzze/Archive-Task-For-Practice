@@ -80,6 +80,33 @@
                     </StackPanel>
                 </TabItem.Header>
                 <!--Заполнение вкладки "Выдача"-->
+                <StackPanel VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="2.5" HorizontalAlignment="Center">
+                        <Image Source="../Element's/Media/CustomerDocument.png"
+                               Width="280"/>
+                    <StackPanel Margin="2.5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                        <GroupBox Header="ФИО Абонента:" FontSize="15">
+                            <TextBox Name="TextBoxCustomer"/>
+                        </GroupBox>
+
+                        <GroupBox Header="Выберите документ:" FontSize="15">
+                            <ComboBox Name="ComboBoxDocument"/>
+                        </GroupBox>
+
+                        <GroupBox Header="Дата выдачи документа:" FontSize="15">
+                            <TextBox Name="TextBoxDate"/>
+                        </GroupBox>
+                        
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button
+                                Content="Очистить"/>
+                            <Button
+                                Content="Оформить"/>
+                        </StackPanel>
+                    </StackPanel>
+                        
+                    </StackPanel>
+                </StackPanel>
             </TabItem>
 
         </TabControl>
