@@ -17,13 +17,13 @@ namespace ArchiveTask.Database
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Fill()
         {
-            this.Archive = new HashSet<Archive>();
+            this.CellCode = new HashSet<CellCode>();
         }
     
         public int Id { get; set; }
         public string FillType { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Archive> Archive { get; set; }
+        public virtual ICollection<CellCode> CellCode { get; set; }
     }
 }

@@ -24,11 +24,20 @@ namespace ArchiveTask.Page_s
         public AdminPage()
         {
             InitializeComponent();
+
+            GridArchive.ItemsSource = ConnectionClass.ConnectionPoint.CellCode.ToList(); //Подключение DataGrid к необходимой таблице \ "ДатаГрид.ItemsSource = КлассПодключения.НазваниеКлассаПодключения.Таблица.ToList();"
+            GridDocuments.ItemsSource = ConnectionClass.ConnectionPoint.Document.ToList();
         }
 
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationClass.Navigation.GoBack();
+        }
+
+        private void ButtonRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            GridArchive.ItemsSource = ConnectionClass.ConnectionPoint.CellCode.ToList();
+            GridDocuments.ItemsSource = ConnectionClass.ConnectionPoint.Document.ToList();
         }
     }
 }

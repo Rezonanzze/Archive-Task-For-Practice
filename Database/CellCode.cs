@@ -17,7 +17,6 @@ namespace ArchiveTask.Database
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CellCode()
         {
-            this.Archive = new HashSet<Archive>();
             this.InventoryNumber = new HashSet<InventoryNumber>();
         }
     
@@ -26,9 +25,9 @@ namespace ArchiveTask.Database
         public string Rack { get; set; }
         public string Shelf { get; set; }
         public string Cell { get; set; }
+        public int FillTypeId { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Archive> Archive { get; set; }
+        public virtual Fill Fill { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<InventoryNumber> InventoryNumber { get; set; }
     }

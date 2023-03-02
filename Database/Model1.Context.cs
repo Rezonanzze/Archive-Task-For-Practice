@@ -25,7 +25,6 @@ namespace ArchiveTask.Database
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Archive> Archive { get; set; }
         public virtual DbSet<CellCode> CellCode { get; set; }
         public virtual DbSet<Customer> Customer { get; set; }
         public virtual DbSet<Document> Document { get; set; }

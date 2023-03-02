@@ -77,9 +77,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Database\Archive.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\CellCode.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -186,6 +183,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="External File%27s\App\AppAdminPage1.png" />
+    <Resource Include="External File%27s\App\AppAdminPage2.png" />
+    <Resource Include="External File%27s\App\AppLoginPage.png" />
     <Content Include="External File%27s\DatabaseMaterial%27s\DatabaseScript.sql" />
   </ItemGroup>
   <ItemGroup>

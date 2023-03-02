@@ -26,15 +26,17 @@
                 </TabItem.Header>
                 <!--Заполнение вкладки "Архив"-->
                 <TabItem.Content>
-                    <Grid Name="Archive">
-                        <DataGrid>
+                    <Grid>
+                        <DataGrid Name="GridArchive"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="True">
                             <DataGrid.Columns>
-                                <DataGridTextColumn Header="ID" Width="35" Binding="{Binding Id}"/>
-                                <DataGridTextColumn Header="Номер ячейки" Width="*" Binding="{Binding CellCodeName}"/>
+                                <DataGridTextColumn Header="ID Ячейки" Width="78" Binding="{Binding Id}"/>  <!-- Binding - Название поля-->
+                                <DataGridTextColumn Header="№ Ячейки" Width="78" Binding="{Binding CellCodeName}"/>
                                 <DataGridTextColumn Header="Ячейка" Width="*" Binding="{Binding Cell}"/>
                                 <DataGridTextColumn Header="Стеллаж" Width="*" Binding="{Binding Rack}"/>
                                 <DataGridTextColumn Header="Полка" Width="*" Binding="{Binding Shelf}"/>
-                                <DataGridTextColumn Header="Заполненность" Width="*" Binding="{Binding FillId.FillType}"/>
+                                <DataGridTextColumn Header="Заполненность" Width="*" Binding="{Binding Fill.FillType}"/> <!-- Binding - Название таблицы > Название поля-->
                             </DataGrid.Columns>
                         </DataGrid>
                     </Grid>
@@ -51,16 +53,18 @@
                 </TabItem.Header>
                 <!--Заполнение вкладки "Документы"-->
                 <TabItem.Content>
-                    <Grid Name="Documents">
-                        <DataGrid>
+                    <Grid>
+                        <DataGrid Name="GridDocuments"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="True">
                             <DataGrid.Columns>
-                                <DataGridTextColumn Header="ID" Width="35" Binding="{Binding Id}"/>
-                                <DataGridTextColumn Header="Номер ячейки" Width="*" Binding="{Binding CellCodeId.CellCodeName}"/>
-                                <DataGridTextColumn Header="Инвентарный №" Width="*" Binding="{Binding InventoryNumberId.InventoryNumberName}"/>
-                                <DataGridTextColumn Header="Дата поступления" Width="*" Binding="{Binding InventoryNumberId.InventoryNumberName}"/>
+                                <DataGridTextColumn Header="ID Документа" Width="101" Binding="{Binding Id}"/>
+                                <DataGridTextColumn Header="ID Ячейки" Width="78" Binding="{Binding InventoryNumber.CellCodeId}"/>
+                                <DataGridTextColumn Header="Инвентарный №" Width="*" Binding="{Binding InventoryNumber.InventoryNumberName}"/>
+                                <DataGridTextColumn Header="Дата поступления" Width="*" Binding="{Binding InventoryNumber.DateOfReceipt}"/>
                                 <DataGridTextColumn Header="Наименование" Width="*" Binding="{Binding DocumentName}"/>
-                                <DataGridTextColumn Header="Тема" Width="*" Binding="{Binding InventoryNumberId.Theme}"/>
-                                <DataGridTextColumn Header="Кол-во" Width="75" Binding="{Binding InventoryNumberId.Count}"/>
+                                <DataGridTextColumn Header="Тема" Width="*" Binding="{Binding InventoryNumber.Theme}"/>
+                                <DataGridTextColumn Header="Кол-во" Width="58" Binding="{Binding InventoryNumber.Count}"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </Grid>
@@ -80,9 +84,16 @@
 
         </TabControl>
 
+        <!--Дополнительные кнопки подвала-->
         <StackPanel Grid.Row="1"
                     Orientation="Horizontal"
                     HorizontalAlignment="Right">
+
+            <Button
+                Content="Обновить"
+                Name="ButtonRefresh"
+                Click="ButtonRefresh_Click"/>
+
             <Button
                 Content="Выйти"
                 Name="ButtonBack"

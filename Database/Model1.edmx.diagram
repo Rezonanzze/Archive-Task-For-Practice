@@ -5,20 +5,18 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d093bdb646444ef5ada46d406952545c" Name="Diagram1">
-        <EntityTypeShape EntityType="ArchiveTask17Model.Archive" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ArchiveTask17Model.CellCode" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ArchiveTask17Model.Customer" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ArchiveTask17Model.Document" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ArchiveTask17Model.Fill" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ArchiveTask17Model.InventoryNumber" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="ArchiveTask17Model.IssuanceOfADocument" Width="1.5" PointX="7.5" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ArchiveTask17Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.625" IsExpanded="true" />
-        <AssociationConnector Association="ArchiveTask17Model.FK_Archive_CellCode" ManuallyRouted="false" />
-        <AssociationConnector Association="ArchiveTask17Model.FK_Archive_Fill" ManuallyRouted="false" />
-        <AssociationConnector Association="ArchiveTask17Model.FK_InventoryNumber_CellCode" ManuallyRouted="false" />
-        <AssociationConnector Association="ArchiveTask17Model.FK_IssuanceOfADocument_Customer" ManuallyRouted="false" />
-        <AssociationConnector Association="ArchiveTask17Model.FK_Document_InventoryNumber" ManuallyRouted="false" />
-        <AssociationConnector Association="ArchiveTask17Model.FK_IssuanceOfADocument_Document" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ArchiveTask17Model.CellCode" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="ArchiveTask17Model.Customer" Width="1.5" PointX="13" PointY="3.875" />
+        <EntityTypeShape EntityType="ArchiveTask17Model.Document" Width="1.5" PointX="7.5" PointY="1.25" />
+        <EntityTypeShape EntityType="ArchiveTask17Model.Fill" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="ArchiveTask17Model.InventoryNumber" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="ArchiveTask17Model.IssuanceOfADocument" Width="1.5" PointX="9.75" PointY="1.125" />
+        <EntityTypeShape EntityType="ArchiveTask17Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" />
+        <AssociationConnector Association="ArchiveTask17Model.FK_CellCode_Fill" />
+        <AssociationConnector Association="ArchiveTask17Model.FK_InventoryNumber_CellCode1" />
+        <AssociationConnector Association="ArchiveTask17Model.FK_IssuanceOfADocument_Customer" />
+        <AssociationConnector Association="ArchiveTask17Model.FK_Document_InventoryNumber" />
+        <AssociationConnector Association="ArchiveTask17Model.FK_IssuanceOfADocument_Document" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
